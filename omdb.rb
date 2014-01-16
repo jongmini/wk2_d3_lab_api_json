@@ -23,9 +23,9 @@ post '/result' do
 
   parsed_str = JSON.parse(response.body)
 
-  # parsed_str is {"Search":[{"Title":"The Simpsons Movie","Year":"2007","imdbID":"tt0462538","Type":"movie"},{"Title":"Scary Movie","Year":"2000","imdbID":"tt0175142","Type":"movie"},{"Title":"Scary Movie 2","Year":"2001","imdbID":"tt0257106","Type":"movie"},{"Title":"Scary Movie 3","Year":"2003","imdbID":"tt0306047","Type":"movie"},{"Title":"Bee Movie","Year":"2007","imdbID":"tt0389790","Type":"movie"},{"Title":"Epic Movie","Year":"2007","imdbID":"tt0799949","Type":"movie"},{"Title":"Scary Movie 4","Year":"2006","imdbID":"tt0362120","Type":"movie"},{"Title":"Not Another Teen Movie","Year":"2001","imdbID":"tt0277371","Type":"movie"},{"Title":"Disaster Movie","Year":"2008","imdbID":"tt1213644","Type":"movie"},{"Title":"Jackass: The Movie","Year":"2002","imdbID":"tt0322802","Type":"movie"}]}
+  # parsed_str is {"Search":[{"Title":"The Simpsons Movie","Year":"2007","imdbID":"tt0462538","Type":"movie"},{"Title": etc.
 
-  # result_str is {"Search"=>[{"Title"=>"The Simpsons Movie", "Year"=>"2007", "imdbID"=>"tt0462538", "Type"=>"movie"}, {"Title"=>"Scary Movie", "Year"=>"2000", "imdbID"=>"tt0175142", "Type"=>"movie"}, {"Title"=>"Scary Movie 2", "Year"=>"2001", "imdbID"=>"tt0257106", "Type"=>"movie"}, {"Title"=>"Scary Movie 3", "Year"=>"2003", "imdbID"=>"tt0306047", "Type"=>"movie"}, {"Title"=>"Bee Movie", "Year"=>"2007", "imdbID"=>"tt0389790", "Type"=>"movie"}, {"Title"=>"Epic Movie", "Year"=>"2007", "imdbID"=>"tt0799949", "Type"=>"movie"}, {"Title"=>"Scary Movie 4", "Year"=>"2006", "imdbID"=>"tt0362120", "Type"=>"movie"}, {"Title"=>"Not Another Teen Movie", "Year"=>"2001", "imdbID"=>"tt0277371", "Type"=>"movie"}, {"Title"=>"Disaster Movie", "Year"=>"2008", "imdbID"=>"tt1213644", "Type"=>"movie"}, {"Title"=>"Jackass: The Movie", "Year"=>"2002", "imdbID"=>"tt0322802", "Type"=>"movie"}]}
+  # parsed_str is {"Search"=>[{"Title"=>"The Simpsons Movie", "Year"=>"2007", "imdbID"=>"tt0462538", "Type"=>"movie"}, {"Title"=>"Scary Movie", etc.
 
 
   # Modify the html output so that a list of movies is provided.
